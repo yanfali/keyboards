@@ -4734,7 +4734,7 @@
       },
       {
         "id": 55,
-        "legend": "Win",
+        "legend": "Alt",
         "state": {
           "x": 1.25,
           "y": 4,
@@ -4820,7 +4820,7 @@
       },
       {
         "id": 56,
-        "legend": "Alt",
+        "legend": "Win",
         "state": {
           "x": 2.5,
           "y": 4,
