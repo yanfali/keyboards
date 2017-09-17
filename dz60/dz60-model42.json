@@ -1556,7 +1556,7 @@
             "fields": []
           },
           {
-            "id": "KC_E",
+            "id": "RGB_HUI",
             "fields": []
           },
           {
@@ -4529,8 +4529,14 @@
         "col": 12,
         "keycodes": [
           {
-            "id": "KC_RSFT",
-            "fields": []
+            "id": "MT()",
+            "fields": [
+			  2,
+			  {
+                "id": "KC_SLSH",
+				"fields": []
+			  }
+			]
           },
           {
             "id": "KC_TRNS",
@@ -4596,7 +4602,7 @@
       },
       {
         "id": 54,
-        "legend": "Shift",
+        "legend": "UP",
         "state": {
           "x": 13,
           "y": 3,
@@ -4681,7 +4687,7 @@
       },
       {
         "id": 55,
-        "legend": "",
+        "legend": "/\n?",
         "state": {
           "x": 14,
           "y": 3,
