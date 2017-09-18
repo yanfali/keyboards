@@ -42,8 +42,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println(`#include "dz60.h`)
-	fmt.Println(`#include "action_layer.h`)
+	fmt.Println(`#include "dz60.h"`)
+	fmt.Println(`#include "action_layer.h"`)
 	fmt.Printf("const uint16_t PROGMEM keymaps[][%d][%d] = {\n", doc.Keyboard.Rows, doc.Keyboard.Columns)
 
 	layers := [4]string{}
