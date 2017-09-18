@@ -4533,8 +4533,14 @@
         "col": 12,
         "keycodes": [
           {
-            "id": "KC_LSFT",
-            "fields": []
+            "id": "MT()",
+            "fields": [
+              2,
+              {
+                "id": "KC_SLSH",
+                "fields": []
+              }
+            ]
           },
           {
             "id": "KC_TRNS",
