@@ -1,0 +1,463 @@
+for d in scas scdis scboot scinfo scrd scwr; do (cd ../../$d; make OS=WINDOWS ); done
+make[1]: Entering directory `/home/jon/sctools/scas'
+i586-mingw32msvc-g++ -o scas scas.o ../common/hid_tokens.o ../common/macro_tokens.o 
+scas.o: In function `_Z11print_errori':
+scas.cpp:(.text+0x1f): undefined reference to `stderr'
+scas.cpp:(.text+0x3f): undefined reference to `fwrite'
+scas.cpp:(.text+0x49): undefined reference to `stderr'
+scas.cpp:(.text+0x69): undefined reference to `fwrite'
+scas.cpp:(.text+0x73): undefined reference to `stderr'
+scas.cpp:(.text+0x93): undefined reference to `fwrite'
+scas.cpp:(.text+0x9d): undefined reference to `stderr'
+scas.cpp:(.text+0xbd): undefined reference to `fwrite'
+scas.cpp:(.text+0xc4): undefined reference to `stderr'
+scas.cpp:(.text+0xe4): undefined reference to `fwrite'
+scas.cpp:(.text+0xeb): undefined reference to `stderr'
+scas.cpp:(.text+0x10b): undefined reference to `fwrite'
+scas.cpp:(.text+0x112): undefined reference to `stderr'
+scas.cpp:(.text+0x132): undefined reference to `fwrite'
+scas.o: In function `_Z15skip_whitespacePKc':
+scas.cpp:(.text+0x151): undefined reference to `isspace'
+scas.o: In function `_Z19skip_non_whitespacePKc':
+scas.cpp:(.text+0x186): undefined reference to `isspace'
+scas.o: In function `_Z5matchPKcS0_':
+scas.cpp:(.text+0x1d4): undefined reference to `strlen'
+scas.cpp:(.text+0x1f0): undefined reference to `strncasecmp'
+scas.o: In function `_Z9get_tokenPKc':
+scas.cpp:(.text+0x2fd): undefined reference to `_ZNSaIcEC1Ev'
+scas.cpp:(.text+0x32b): undefined reference to `_ZNSaIcED1Ev'
+scas.cpp:(.text+0x337): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0x342): undefined reference to `_ZNSaIcED1Ev'
+scas.o: In function `_Z9parse_intPKc':
+scas.cpp:(.text+0x37f): undefined reference to `atoi'
+scas.o: In function `_Z9parse_hidPKc':
+scas.cpp:(.text+0x3e0): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x3f5): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x410): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x41c): undefined reference to `_Unwind_Resume'
+scas.o: In function `_Z16parse_meta_matchPKcRiS1_':
+scas.cpp:(.text+0x477): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x527): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x533): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0x53e): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z17parse_meta_handedPKc':
+scas.cpp:(.text+0x59a): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x5e4): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x5f0): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0x5fb): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z15parse_macro_cmdPKcRiS1_':
+scas.cpp:(.text+0x649): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x6b1): undefined reference to `_ZNSsaSERKSs'
+scas.cpp:(.text+0x6c2): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x6d6): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x6e1): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x743): undefined reference to `_ZNSsaSERKSs'
+scas.cpp:(.text+0x754): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x768): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x7a2): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x7ce): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x814): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x820): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0x82b): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z16lookup_set_tokenPKc':
+scas.cpp:(.text+0x850): undefined reference to `strcasecmp'
+scas.cpp:(.text+0x86e): undefined reference to `strcasecmp'
+scas.cpp:(.text+0x88c): undefined reference to `strcasecmp'
+scas.cpp:(.text+0x8aa): undefined reference to `strcasecmp'
+scas.cpp:(.text+0x8c8): undefined reference to `strcasecmp'
+scas.o: In function `_Z16parse_single_setPKc':
+scas.cpp:(.text+0x902): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x931): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x93d): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0x948): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z15parse_multi_setPKc':
+scas.cpp:(.text+0x988): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x9f1): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x9fd): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0xa08): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z16parse_function_nPKc':
+scas.cpp:(.text+0xa4f): undefined reference to `strncasecmp'
+scas.cpp:(.text+0xa73): undefined reference to `atoi'
+scas.o: In function `_Z10cmd_selectPKc':
+scas.cpp:(.text+0xaf7): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0xb07): undefined reference to `strcasecmp'
+scas.cpp:(.text+0xb65): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0xb71): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0xb7c): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z6is_hexc':
+scas.cpp:(.text+0xbd3): undefined reference to `toupper'
+scas.o: In function `_Z9parse_hexc':
+scas.cpp:(.text+0xc14): undefined reference to `toupper'
+scas.o: In function `_Z15cmd_keyboard_idPKc':
+scas.cpp:(.text+0xd1a): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0xd2a): undefined reference to `strcasecmp'
+scas.cpp:(.text+0xd8b): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0xd97): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0xda2): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z9cmd_macroPKc':
+scas.cpp:(.text+0xf98): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x1021): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x102d): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0x1038): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z11cmd_onbreakPKc':
+scas.cpp:(.text+0x10a9): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x10b9): undefined reference to `strcasecmp'
+scas.cpp:(.text+0x10e8): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x10f4): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0x10ff): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z12cmd_endmacroPKc':
+scas.cpp:(.text+0x136e): undefined reference to `_Unwind_Resume'
+scas.o: In function `_Z11cmd_includePKc':
+scas.cpp:(.text+0x1463): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x1478): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x1493): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x149f): undefined reference to `_Unwind_Resume'
+scas.o: In function `_Z20cmd_endlayerdefblockPKc':
+scas.cpp:(.text+0x16ca): undefined reference to `_Unwind_Resume'
+scas.o: In function `_Z17cmd_endremapblockPKc':
+scas.cpp:(.text+0x182c): undefined reference to `_Unwind_Resume'
+scas.o: In function `_Z17cmd_endmacroblockPKc':
+scas.cpp:(.text+0x1a8e): undefined reference to `_Unwind_Resume'
+scas.o: In function `_Z12find_commandPKc':
+scas.cpp:(.text+0x1b18): undefined reference to `strcasecmp'
+scas.o: In function `_Z12process_linePc':
+scas.cpp:(.text+0x1b5b): undefined reference to `strchr'
+scas.cpp:(.text+0x1b8a): undefined reference to `_ZNKSs4sizeEv'
+scas.cpp:(.text+0x1b9e): undefined reference to `_ZNKSs5c_strEv'
+scas.cpp:(.text+0x1bf7): undefined reference to `_ZNSsD1Ev'
+scas.cpp:(.text+0x1c03): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text+0x1c0e): undefined reference to `_ZNSsD1Ev'
+scas.o: In function `_Z12process_fileP8_IO_FILE':
+scas.cpp:(.text+0x1c4c): undefined reference to `stderr'
+scas.cpp:(.text+0x1c63): undefined reference to `fprintf'
+scas.cpp:(.text+0x1c85): undefined reference to `fgets'
+scas.o: In function `_Z12process_filePKc':
+scas.cpp:(.text+0x1cae): undefined reference to `fopen'
+scas.cpp:(.text+0x1cd0): undefined reference to `fclose'
+scas.o: In function `_Z12write_targetP8_IO_FILE':
+scas.cpp:(.text+0x1cf6): undefined reference to `fputc'
+scas.cpp:(.text+0x1d09): undefined reference to `fputc'
+scas.cpp:(.text+0x1d1c): undefined reference to `fputc'
+scas.cpp:(.text+0x1d2f): undefined reference to `fputc'
+scas.cpp:(.text+0x1d48): undefined reference to `fputc'
+scas.o:scas.cpp:(.text+0x1d5b): more undefined references to `fputc' follow
+scas.o: In function `_Z12write_targetP8_IO_FILE':
+scas.cpp:(.text+0x1dbf): undefined reference to `fwrite'
+scas.o: In function `_Z12write_targetPKc':
+scas.cpp:(.text+0x1e11): undefined reference to `fopen'
+scas.cpp:(.text+0x1e33): undefined reference to `fclose'
+scas.o: In function `main':
+scas.cpp:(.text+0x1e5b): undefined reference to `stderr'
+scas.cpp:(.text+0x1e7b): undefined reference to `fwrite'
+scas.cpp:(.text+0x1f0d): undefined reference to `stderr'
+scas.cpp:(.text+0x1f21): undefined reference to `fprintf'
+scas.o: In function `_Z41__static_initialization_and_destruction_0ii':
+scas.cpp:(.text+0x1f6c): undefined reference to `__dso_handle'
+scas.cpp:(.text+0x1f7c): undefined reference to `__cxa_atexit'
+scas.cpp:(.text+0x1f95): undefined reference to `__dso_handle'
+scas.cpp:(.text+0x1fa5): undefined reference to `__cxa_atexit'
+scas.cpp:(.text+0x1fbe): undefined reference to `__dso_handle'
+scas.cpp:(.text+0x1fce): undefined reference to `__cxa_atexit'
+scas.cpp:(.text+0x1fe7): undefined reference to `__dso_handle'
+scas.cpp:(.text+0x1ff7): undefined reference to `__cxa_atexit'
+scas.cpp:(.text+0x2010): undefined reference to `__dso_handle'
+scas.cpp:(.text+0x2020): undefined reference to `__cxa_atexit'
+scas.cpp:(.text+0x2039): undefined reference to `__dso_handle'
+scas.cpp:(.text+0x2049): undefined reference to `__cxa_atexit'
+../common/hid_tokens.o: In function `_Z16lookup_hid_tokenPKc':
+hid_tokens.cpp:(.text+0x74): undefined reference to `strcasecmp'
+../common/hid_tokens.o: In function `_Z17lookup_meta_tokenPKc':
+hid_tokens.cpp:(.text+0xcb): undefined reference to `strcasecmp'
+../common/macro_tokens.o: In function `_Z18lookup_macro_tokenPKc':
+macro_tokens.cpp:(.text+0x74): undefined reference to `strcasecmp'
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/lib/libmingw32.a(main.o):(.text+0x85): undefined reference to `_WinMain@16'
+scas.o: In function `_ZNSsC1IPKcEET_S2_RKSaIcE':
+scas.cpp:(.text._ZNSsC1IPKcEET_S2_RKSaIcE[_ZNSsC1IPKcEET_S2_RKSaIcE]+0x31): undefined reference to `_ZNSs12_Alloc_hiderC1EPcRKSaIcE'
+scas.o: In function `_ZSteqIcSt11char_traitsIcESaIcEEbRKSbIT_T0_T1_EPKS3_':
+scas.cpp:(.text._ZSteqIcSt11char_traitsIcESaIcEEbRKSbIT_T0_T1_EPKS3_[_ZSteqIcSt11char_traitsIcESaIcEEbRKSbIT_T0_T1_EPKS3_]+0x14): undefined reference to `_ZNKSs7compareEPKc'
+scas.o: In function `_ZNSt6vectorISt4pairIhhESaIS1_EED1Ev':
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EED1Ev[_ZNSt6vectorISt4pairIhhESaIS1_EED1Ev]+0x47): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt6vectorIhSaIhEED1Ev':
+scas.cpp:(.text._ZNSt6vectorIhSaIhEED1Ev[_ZNSt6vectorIhSaIhEED1Ev]+0x47): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt12_Vector_baseISt4pairIhhESaIS1_EED2Ev':
+scas.cpp:(.text._ZNSt12_Vector_baseISt4pairIhhESaIS1_EED2Ev[_ZNSt12_Vector_baseISt4pairIhhESaIS1_EED2Ev]+0x50): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt6vectorISt4pairIhhESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_':
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_[_ZNSt6vectorISt4pairIhhESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_]+0x21a): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_[_ZNSt6vectorISt4pairIhhESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_]+0x27a): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_[_ZNSt6vectorISt4pairIhhESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_]+0x283): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_[_ZNSt6vectorISt4pairIhhESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_]+0x28f): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt12_Vector_baseI7macro_tSaIS0_EED2Ev':
+scas.cpp:(.text._ZNSt12_Vector_baseI7macro_tSaIS0_EED2Ev[_ZNSt12_Vector_baseI7macro_tSaIS0_EED2Ev]+0x57): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorI7macro_tE9constructEPS1_RKS1_':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorI7macro_tE9constructEPS1_RKS1_[_ZN9__gnu_cxx13new_allocatorI7macro_tE9constructEPS1_RKS1_]+0x51): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_':
+scas.cpp:(.text._ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_[_ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_]+0xc1): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text._ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_[_ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_]+0x26c): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_[_ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_]+0x2d4): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_[_ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_]+0x2dd): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_[_ZNSt6vectorI7macro_tSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_]+0x2e9): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt12_Vector_baseISt6vectorIhSaIhEESaIS2_EED2Ev':
+scas.cpp:(.text._ZNSt12_Vector_baseISt6vectorIhSaIhEESaIS2_EED2Ev[_ZNSt12_Vector_baseISt6vectorIhSaIhEESaIS2_EED2Ev]+0x57): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh':
+scas.cpp:(.text._ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh[_ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh]+0x20f): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh[_ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh]+0x26d): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh[_ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh]+0x276): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh[_ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh]+0x282): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt12_Vector_baseIhSaIhEED2Ev':
+scas.cpp:(.text._ZNSt12_Vector_baseIhSaIhEED2Ev[_ZNSt12_Vector_baseIhSaIhEED2Ev]+0x4e): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE9constructEPS3_RKS3_':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE9constructEPS3_RKS3_[_ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE9constructEPS3_RKS3_]+0x51): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_':
+scas.cpp:(.text._ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_[_ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_]+0xc1): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text._ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_[_ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_]+0x26a): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_[_ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_]+0x2d1): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_[_ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_]+0x2da): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_[_ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_]+0x2e6): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNKSt6vectorISt4pairIhhESaIS1_EE12_M_check_lenEjPKc':
+scas.cpp:(.text._ZNKSt6vectorISt4pairIhhESaIS1_EE12_M_check_lenEjPKc[_ZNKSt6vectorISt4pairIhhESaIS1_EE12_M_check_lenEjPKc]+0x36): undefined reference to `_ZSt20__throw_length_errorPKc'
+scas.o: In function `_ZNSt6vectorISt4pairIhhESaIS1_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS1_S3_EEEEvS8_T_S9_St20forward_iterator_tag':
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS1_S3_EEEEvS8_T_S9_St20forward_iterator_tag[_ZNSt6vectorISt4pairIhhESaIS1_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS1_S3_EEEEvS8_T_S9_St20forward_iterator_tag]+0x35c): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS1_S3_EEEEvS8_T_S9_St20forward_iterator_tag[_ZNSt6vectorISt4pairIhhESaIS1_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS1_S3_EEEEvS8_T_S9_St20forward_iterator_tag]+0x39b): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS1_S3_EEEEvS8_T_S9_St20forward_iterator_tag[_ZNSt6vectorISt4pairIhhESaIS1_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS1_S3_EEEEvS8_T_S9_St20forward_iterator_tag]+0x3a4): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS1_S3_EEEEvS8_T_S9_St20forward_iterator_tag[_ZNSt6vectorISt4pairIhhESaIS1_EE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPS1_S3_EEEEvS8_T_S9_St20forward_iterator_tag]+0x3b0): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt6vectorISt4pairIhhESaIS1_EEC1ERKS3_':
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EEC1ERKS3_[_ZNSt6vectorISt4pairIhhESaIS1_EEC1ERKS3_]+0xb0): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNKSt6vectorI7macro_tSaIS0_EE12_M_check_lenEjPKc':
+scas.cpp:(.text._ZNKSt6vectorI7macro_tSaIS0_EE12_M_check_lenEjPKc[_ZNKSt6vectorI7macro_tSaIS0_EE12_M_check_lenEjPKc]+0x36): undefined reference to `_ZSt20__throw_length_errorPKc'
+scas.o: In function `_ZNKSt6vectorIhSaIhEE12_M_check_lenEjPKc':
+scas.cpp:(.text._ZNKSt6vectorIhSaIhEE12_M_check_lenEjPKc[_ZNKSt6vectorIhSaIhEE12_M_check_lenEjPKc]+0x36): undefined reference to `_ZSt20__throw_length_errorPKc'
+scas.o: In function `_ZNSt6vectorIhSaIhEEC1ERKS1_':
+scas.cpp:(.text._ZNSt6vectorIhSaIhEEC1ERKS1_[_ZNSt6vectorIhSaIhEEC1ERKS1_]+0xb0): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNKSt6vectorIS_IhSaIhEESaIS1_EE12_M_check_lenEjPKc':
+scas.cpp:(.text._ZNKSt6vectorIS_IhSaIhEESaIS1_EE12_M_check_lenEjPKc[_ZNKSt6vectorIS_IhSaIhEESaIS1_EE12_M_check_lenEjPKc]+0x36): undefined reference to `_ZSt20__throw_length_errorPKc'
+scas.o: In function `_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag':
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x1c): undefined reference to `_ZNSaIcEC1Ev'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x54): undefined reference to `_ZNSaIcED1Ev'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x5f): undefined reference to `_ZNSs12_S_empty_repEv'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x67): undefined reference to `_ZNSs4_Rep10_M_refdataEv'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0xa7): undefined reference to `_ZSt19__throw_logic_errorPKc'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0xd6): undefined reference to `_ZNSs4_Rep9_S_createEjjRKSaIcE'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0xe4): undefined reference to `_ZNSs4_Rep10_M_refdataEv'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0xfa): undefined reference to `_ZNSs13_S_copy_charsEPcPKcS1_'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x104): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x116): undefined reference to `_ZNSs4_Rep10_M_destroyERKSaIcE'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x11b): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x124): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x130): undefined reference to `_Unwind_Resume'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x142): undefined reference to `_ZNSs4_Rep26_M_set_length_and_sharableEj'
+scas.cpp:(.text._ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag[_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag]+0x14d): undefined reference to `_ZNSs4_Rep10_M_refdataEv'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorISt4pairIhhEE10deallocateEPS2_j':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorISt4pairIhhEE10deallocateEPS2_j[_ZN9__gnu_cxx13new_allocatorISt4pairIhhEE10deallocateEPS2_j]+0xd): undefined reference to `_ZdlPv'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorISt4pairIhhEE8allocateEjPKv':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorISt4pairIhhEE8allocateEjPKv[_ZN9__gnu_cxx13new_allocatorISt4pairIhhEE8allocateEjPKv]+0x24): undefined reference to `_ZSt17__throw_bad_allocv'
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorISt4pairIhhEE8allocateEjPKv[_ZN9__gnu_cxx13new_allocatorISt4pairIhhEE8allocateEjPKv]+0x31): undefined reference to `_Znwj'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorI7macro_tE10deallocateEPS1_j':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorI7macro_tE10deallocateEPS1_j[_ZN9__gnu_cxx13new_allocatorI7macro_tE10deallocateEPS1_j]+0xd): undefined reference to `_ZdlPv'
+scas.o: In function `_ZNSt12_Vector_baseISt4pairIhhESaIS1_EEC2EjRKS2_':
+scas.cpp:(.text._ZNSt12_Vector_baseISt4pairIhhESaIS1_EEC2EjRKS2_[_ZNSt12_Vector_baseISt4pairIhhESaIS1_EEC2EjRKS2_]+0x6d): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt6vectorISt4pairIhhESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_':
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_[_ZNSt6vectorISt4pairIhhESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_]+0x53): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_[_ZNSt6vectorISt4pairIhhESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_]+0x71): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_[_ZNSt6vectorISt4pairIhhESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_]+0x7a): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt6vectorISt4pairIhhESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_[_ZNSt6vectorISt4pairIhhESaIS1_EE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKS1_S3_EEEEPS1_jT_SB_]+0x86): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorI7macro_tE8allocateEjPKv':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorI7macro_tE8allocateEjPKv[_ZN9__gnu_cxx13new_allocatorI7macro_tE8allocateEjPKv]+0x24): undefined reference to `_ZSt17__throw_bad_allocv'
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorI7macro_tE8allocateEjPKv[_ZN9__gnu_cxx13new_allocatorI7macro_tE8allocateEjPKv]+0x39): undefined reference to `_Znwj'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE10deallocateEPS3_j':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE10deallocateEPS3_j[_ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE10deallocateEPS3_j]+0xd): undefined reference to `_ZdlPv'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorIhE8allocateEjPKv':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorIhE8allocateEjPKv[_ZN9__gnu_cxx13new_allocatorIhE8allocateEjPKv]+0x24): undefined reference to `_ZSt17__throw_bad_allocv'
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorIhE8allocateEjPKv[_ZN9__gnu_cxx13new_allocatorIhE8allocateEjPKv]+0x2f): undefined reference to `_Znwj'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorIhE10deallocateEPhj':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorIhE10deallocateEPhj[_ZN9__gnu_cxx13new_allocatorIhE10deallocateEPhj]+0xd): undefined reference to `_ZdlPv'
+scas.o: In function `_ZNSt12_Vector_baseIhSaIhEEC2EjRKS0_':
+scas.cpp:(.text._ZNSt12_Vector_baseIhSaIhEEC2EjRKS0_[_ZNSt12_Vector_baseIhSaIhEEC2EjRKS0_]+0x6a): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_':
+scas.cpp:(.text._ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_[_ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_]+0x53): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_[_ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_]+0x71): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_[_ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_]+0x7a): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_[_ZNSt6vectorIhSaIhEE20_M_allocate_and_copyIN9__gnu_cxx17__normal_iteratorIPKhS1_EEEEPhjT_S9_]+0x86): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE8allocateEjPKv':
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE8allocateEjPKv[_ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE8allocateEjPKv]+0x24): undefined reference to `_ZSt17__throw_bad_allocv'
+scas.cpp:(.text._ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE8allocateEjPKv[_ZN9__gnu_cxx13new_allocatorISt6vectorIhSaIhEEE8allocateEjPKv]+0x38): undefined reference to `_Znwj'
+scas.o: In function `_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairIhhESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_':
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairIhhESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairIhhESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_]+0x6f): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairIhhESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairIhhESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_]+0x86): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairIhhESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairIhhESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_]+0x8f): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairIhhESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairIhhESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_]+0x9b): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIP7macro_tS3_EET0_T_S5_S4_':
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIP7macro_tS3_EET0_T_S5_S4_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIP7macro_tS3_EET0_T_S5_S4_]+0x59): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIP7macro_tS3_EET0_T_S5_S4_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIP7macro_tS3_EET0_T_S5_S4_]+0x92): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIP7macro_tS3_EET0_T_S5_S4_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIP7macro_tS3_EET0_T_S5_S4_]+0x9b): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIP7macro_tS3_EET0_T_S5_S4_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIP7macro_tS3_EET0_T_S5_S4_]+0xa7): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIhEEPT_PKS3_S6_S4_':
+scas.cpp:(.text._ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIhEEPT_PKS3_S6_S4_[_ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIhEEPT_PKS3_S6_S4_]+0x2f): undefined reference to `memmove'
+scas.o: In function `_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIPSt6vectorIhSaIhEES5_EET0_T_S7_S6_':
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIPSt6vectorIhSaIhEES5_EET0_T_S7_S6_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIPSt6vectorIhSaIhEES5_EET0_T_S7_S6_]+0x59): undefined reference to `__cxa_begin_catch'
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIPSt6vectorIhSaIhEES5_EET0_T_S7_S6_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIPSt6vectorIhSaIhEES5_EET0_T_S7_S6_]+0x92): undefined reference to `__cxa_rethrow'
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIPSt6vectorIhSaIhEES5_EET0_T_S7_S6_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIPSt6vectorIhSaIhEES5_EET0_T_S7_S6_]+0x9b): undefined reference to `__cxa_end_catch'
+scas.cpp:(.text._ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIPSt6vectorIhSaIhEES5_EET0_T_S7_S6_[_ZNSt20__uninitialized_copyILb0EE18uninitialized_copyIPSt6vectorIhSaIhEES5_EET0_T_S7_S6_]+0xa7): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIhEEPT_PKS3_S6_S4_':
+scas.cpp:(.text._ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIhEEPT_PKS3_S6_S4_[_ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIhEEPT_PKS3_S6_S4_]+0x24): undefined reference to `memmove'
+scas.o: In function `_ZNSt6vectorI7macro_tSaIS0_EED1Ev':
+scas.cpp:(.text._ZNSt6vectorI7macro_tSaIS0_EED1Ev[_ZNSt6vectorI7macro_tSaIS0_EED1Ev]+0x47): undefined reference to `_Unwind_Resume'
+scas.o: In function `_ZNSt6vectorIS_IhSaIhEESaIS1_EED1Ev':
+scas.cpp:(.text._ZNSt6vectorIS_IhSaIhEESaIS1_EED1Ev[_ZNSt6vectorIS_IhSaIhEESaIS1_EED1Ev]+0x47): undefined reference to `_Unwind_Resume'
+scas.o:(.eh_frame+0x12): undefined reference to `__gxx_personality_v0'
+scas.o:(.eh_frame+0x147): undefined reference to `__gxx_personality_v0'
+../common/hid_tokens.o:(.eh_frame+0x12): undefined reference to `__gxx_personality_v0'
+../common/macro_tokens.o:(.eh_frame+0x12): undefined reference to `__gxx_personality_v0'
+collect2: ld returned 1 exit status
+make[1]: *** [scas] Error 1
+make[1]: Leaving directory `/home/jon/sctools/scas'
+make[1]: Entering directory `/home/jon/sctools/scdis'
+i586-mingw32msvc-g++ -o scdis scdis.o ../common/hid_tokens.o ../common/macro_tokens.o 
+scdis.o: In function `_Z9get_ifseth':
+scdis.cpp:(.text+0xb8): undefined reference to `_ZNSaIcEC1Ev'
+scdis.cpp:(.text+0xcf): undefined reference to `_ZNSsC1EPKcRKSaIcE'
+scdis.cpp:(.text+0xe0): undefined reference to `_ZNSaIcED1Ev'
+scdis.cpp:(.text+0xec): undefined reference to `_Unwind_Resume'
+scdis.cpp:(.text+0xf7): undefined reference to `_ZNSaIcED1Ev'
+scdis.cpp:(.text+0x107): undefined reference to `_ZNSsC1Ev'
+scdis.cpp:(.text+0x134): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x147): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x170): undefined reference to `_ZNSsC1ERKSs'
+scdis.cpp:(.text+0x181): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0x18d): undefined reference to `_Unwind_Resume'
+scdis.cpp:(.text+0x198): undefined reference to `_ZNSsD1Ev'
+scdis.o: In function `_Z21get_macro_match_metashh':
+scdis.cpp:(.text+0x1db): undefined reference to `_ZNSsC1Ev'
+scdis.cpp:(.text+0x237): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x249): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x2c8): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x2e0): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x2f2): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x311): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0x31d): undefined reference to `_Unwind_Resume'
+scdis.o: In function `_Z19get_macrostep_metasi':
+scdis.cpp:(.text+0x341): undefined reference to `_ZNSsC1Ev'
+scdis.cpp:(.text+0x36c): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x37e): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x3a0): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0x3ac): undefined reference to `_Unwind_Resume'
+scdis.o: In function `_Z13get_macrostepii':
+scdis.cpp:(.text+0x3d0): undefined reference to `_ZNSsC1Ev'
+scdis.cpp:(.text+0x3ee): undefined reference to `_ZNSsaSEPKc'
+scdis.cpp:(.text+0x409): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x41b): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x46b): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x496): undefined reference to `_ZNSspLERKSs'
+scdis.cpp:(.text+0x4a7): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0x4bb): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0x4da): undefined reference to `sprintf'
+scdis.cpp:(.text+0x4e5): undefined reference to `_ZNSaIcEC1Ev'
+scdis.cpp:(.text+0x4fe): undefined reference to `_ZNSsC1EPKcRKSaIcE'
+scdis.cpp:(.text+0x50f): undefined reference to `_ZNSspLERKSs'
+scdis.cpp:(.text+0x520): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0x531): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0x542): undefined reference to `_ZNSaIcED1Ev'
+scdis.cpp:(.text+0x553): undefined reference to `_ZNSaIcED1Ev'
+scdis.cpp:(.text+0x568): undefined reference to `_ZNSspLEPKc'
+scdis.cpp:(.text+0x578): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0x584): undefined reference to `_Unwind_Resume'
+scdis.o: In function `_Z18process_layerblockPKhS0_':
+scdis.cpp:(.text+0x5c7): undefined reference to `fwrite'
+scdis.cpp:(.text+0x5fc): undefined reference to `fwrite'
+scdis.cpp:(.text+0x630): undefined reference to `fprintf'
+scdis.cpp:(.text+0x66b): undefined reference to `fwrite'
+scdis.cpp:(.text+0x6b0): undefined reference to `fputc'
+scdis.cpp:(.text+0x6e0): undefined reference to `fprintf'
+scdis.cpp:(.text+0x715): undefined reference to `fprintf'
+scdis.o: In function `_Z18process_remapblockPKhS0_':
+scdis.cpp:(.text+0x764): undefined reference to `fwrite'
+scdis.cpp:(.text+0x79a): undefined reference to `fwrite'
+scdis.cpp:(.text+0x7ce): undefined reference to `fprintf'
+scdis.cpp:(.text+0x7f8): undefined reference to `fprintf'
+scdis.cpp:(.text+0x833): undefined reference to `fwrite'
+scdis.cpp:(.text+0x895): undefined reference to `fprintf'
+scdis.o: In function `_Z13process_macroPKhS0_':
+scdis.cpp:(.text+0x947): undefined reference to `_ZNKSs5c_strEv'
+scdis.cpp:(.text+0x97b): undefined reference to `fprintf'
+scdis.cpp:(.text+0x9ca): undefined reference to `_ZNKSs5c_strEv'
+scdis.cpp:(.text+0x9e4): undefined reference to `fprintf'
+scdis.cpp:(.text+0x9f5): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0xa09): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0xa59): undefined reference to `fprintf'
+scdis.cpp:(.text+0xaa8): undefined reference to `_ZNKSs5c_strEv'
+scdis.cpp:(.text+0xac2): undefined reference to `fprintf'
+scdis.cpp:(.text+0xad3): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0xae4): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0xb1e): undefined reference to `fwrite'
+scdis.cpp:(.text+0xb2e): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0xb4a): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0xb56): undefined reference to `_Unwind_Resume'
+scdis.o: In function `_Z18process_macroblockPKhS0_':
+scdis.cpp:(.text+0xb87): undefined reference to `fwrite'
+scdis.cpp:(.text+0xbbc): undefined reference to `fwrite'
+scdis.cpp:(.text+0xbf0): undefined reference to `fprintf'
+scdis.cpp:(.text+0xc32): undefined reference to `fwrite'
+scdis.cpp:(.text+0xca7): undefined reference to `fwrite'
+scdis.o: In function `_Z13process_blockPKhj':
+scdis.cpp:(.text+0xd36): undefined reference to `fwrite'
+scdis.cpp:(.text+0xd66): undefined reference to `fprintf'
+scdis.cpp:(.text+0xdfe): undefined reference to `fwrite'
+scdis.cpp:(.text+0xe79): undefined reference to `_ZNKSs5c_strEv'
+scdis.cpp:(.text+0xe93): undefined reference to `fprintf'
+scdis.cpp:(.text+0xea4): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0xeb0): undefined reference to `_Unwind_Resume'
+scdis.cpp:(.text+0xebb): undefined reference to `_ZNSsD1Ev'
+scdis.cpp:(.text+0xede): undefined reference to `fprintf'
+scdis.cpp:(.text+0xf05): undefined reference to `fwrite'
+scdis.cpp:(.text+0xf28): undefined reference to `fprintf'
+scdis.cpp:(.text+0xf4f): undefined reference to `fwrite'
+scdis.cpp:(.text+0xfd0): undefined reference to `fwrite'
+scdis.o: In function `_Z12process_filePKhj':
+scdis.cpp:(.text+0x1005): undefined reference to `fprintf'
+scdis.cpp:(.text+0x1044): undefined reference to `fprintf'
+scdis.cpp:(.text+0x1083): undefined reference to `fprintf'
+scdis.cpp:(.text+0x10be): undefined reference to `fprintf'
+scdis.cpp:(.text+0x10fb): undefined reference to `fprintf'
+scdis.cpp:(.text+0x114c): undefined reference to `fwrite'
+scdis.o: In function `main':
+scdis.cpp:(.text+0x119c): undefined reference to `stderr'
+scdis.cpp:(.text+0x11bc): undefined reference to `fwrite'
+scdis.cpp:(.text+0x11e6): undefined reference to `fopen'
+scdis.cpp:(.text+0x11fe): undefined reference to `stderr'
+scdis.cpp:(.text+0x1212): undefined reference to `fprintf'
+scdis.cpp:(.text+0x1240): undefined reference to `fread'
+scdis.cpp:(.text+0x1250): undefined reference to `fclose'
+scdis.cpp:(.text+0x126e): undefined reference to `fopen'
+scdis.cpp:(.text+0x1289): undefined reference to `stderr'
+scdis.cpp:(.text+0x129d): undefined reference to `fprintf'
+scdis.cpp:(.text+0x12c7): undefined reference to `stdout'
+scdis.cpp:(.text+0x12d8): undefined reference to `fclose'
+scdis.cpp:(.text+0x12e4): undefined reference to `stderr'
+scdis.cpp:(.text+0x1304): undefined reference to `fwrite'
+scdis.o: In function `_Z41__static_initialization_and_destruction_0ii':
+scdis.cpp:(.text+0x1329): undefined reference to `stdout'
+../common/hid_tokens.o: In function `_Z16lookup_hid_tokenPKc':
+hid_tokens.cpp:(.text+0x74): undefined reference to `strcasecmp'
+../common/hid_tokens.o: In function `_Z17lookup_meta_tokenPKc':
+hid_tokens.cpp:(.text+0xcb): undefined reference to `strcasecmp'
+../common/macro_tokens.o: In function `_Z18lookup_macro_tokenPKc':
+macro_tokens.cpp:(.text+0x74): undefined reference to `strcasecmp'
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/lib/libmingw32.a(main.o):(.text+0x85): undefined reference to `_WinMain@16'
+scdis.o:(.eh_frame+0x12): undefined reference to `__gxx_personality_v0'
+scdis.o:(.eh_frame+0x83): undefined reference to `__gxx_personality_v0'
+../common/hid_tokens.o:(.eh_frame+0x12): undefined reference to `__gxx_personality_v0'
+../common/macro_tokens.o:(.eh_frame+0x12): undefined reference to `__gxx_personality_v0'
+collect2: ld returned 1 exit status
+make[1]: *** [scdis] Error 1
+make[1]: Leaving directory `/home/jon/sctools/scdis'
+make[1]: Entering directory `/home/jon/sctools/scboot'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/jon/sctools/scboot'
+make[1]: Entering directory `/home/jon/sctools/scinfo'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/jon/sctools/scinfo'
+make[1]: Entering directory `/home/jon/sctools/scrd'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/jon/sctools/scrd'
+make[1]: Entering directory `/home/jon/sctools/scwr'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/jon/sctools/scwr'
