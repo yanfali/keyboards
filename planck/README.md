@@ -17,3 +17,6 @@
 
 ## WAN on RBH
 ![](https://github.com/yanfali/keyboards/raw/master/planck/planck-wan-rbh.png)
+
+## G20 RCB on YAM
+![](https://github.com/yanfali/keyboards/raw/master/planck/planck-rcb-yam.png)
