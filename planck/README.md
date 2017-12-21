@@ -20,3 +20,6 @@
 
 ## G20 RCB on YAM
 ![](https://github.com/yanfali/keyboards/raw/master/planck/planck-rcb-yam.png)
+
+## XDA WAN on GQT
+![](https://github.com/yanfali/keyboards/raw/master/planck/planck-wan-gqt.png)
