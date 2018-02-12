@@ -25,6 +25,9 @@ had to connect it directly to my laptop to get it to stop rebooting.
 
 ### Images
 
+![Original plate for visible rust](https://i.imgur.com/YTMwtkG.jpg)
+![Plate stripped of paint](https://i.imgur.com/Mbcjgb8.jpg)
+![powder coated CM QFR Plate](https://i.imgur.com/sHWNMhU.jpg)
 ![powder coated CM QFR Plate](https://i.imgur.com/sHWNMhU.jpg)
 ![powder coated CM QFR Plate Front](https://i.imgur.com/L7ItfiS.jpg)
 ![powder coated CM QFR Plate Close up](https://i.imgur.com/9hiMXo1.jpg)
