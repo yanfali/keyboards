@@ -4,6 +4,10 @@ There's an issue if you try to put the keyboard into programming
 mode using a USB hub, probably because it wants the full 500mA. I
 had to connect it directly to my laptop to get it to stop rebooting.
 
+![powder coated CM QFR Plate](https://i.imgur.com/sHWNMhU.jpg)
+![powder coated CM QFR Plate Front](https://i.imgur.com/L7ItfiS.jpg)
+![powder coated CM QFR Plate Close up](https://i.imgur.com/9hiMXo1.jpg)
+
 #### Putting it into programming mode.
 
  1. `FN` (hold) + `Right Shift` (tap)
