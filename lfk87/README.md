@@ -10,7 +10,7 @@ had to connect it directly to my laptop to get it to stop rebooting.
  1. enter (tap)
 
  1. `dfu-programmer at90usb646 erase`
- 1. `dfu-programmer at90usb646 flash` &gt;`firmware.hex`&gt;
+ 1. `dfu-programmer at90usb646 flash` &lt;`firmware.hex`&gt;
  1. `dfu-programmer at90usb646 reset`
 
 #### Backlight Brightness
