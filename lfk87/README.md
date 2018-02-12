@@ -28,4 +28,4 @@ had to connect it directly to my laptop to get it to stop rebooting.
 ![powder coated CM QFR Plate](https://i.imgur.com/sHWNMhU.jpg)
 ![powder coated CM QFR Plate Front](https://i.imgur.com/L7ItfiS.jpg)
 ![powder coated CM QFR Plate Close up](https://i.imgur.com/9hiMXo1.jpg)
-
+![Gateron Tops, 65g Ergo Clears, LEDs](https://i.imgur.com/o3TpMeH.jpg)
