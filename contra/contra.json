@@ -27,7 +27,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_GRV",
             "fields": []
           },
           {
@@ -117,7 +117,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_EXLM",
             "fields": []
           },
           {
@@ -203,7 +203,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_AT",
             "fields": []
           },
           {
@@ -289,7 +289,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_HASH",
             "fields": []
           },
           {
@@ -375,7 +375,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_DLR",
             "fields": []
           },
           {
@@ -461,7 +461,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_PERC",
             "fields": []
           },
           {
@@ -547,7 +547,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_CIRC",
             "fields": []
           },
           {
@@ -633,7 +633,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_AMPR",
             "fields": []
           },
           {
@@ -719,7 +719,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_ASTR",
             "fields": []
           },
           {
@@ -805,7 +805,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LPRN",
             "fields": []
           },
           {
@@ -891,7 +891,7 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_RPRN",
             "fields": []
           },
           {
@@ -1065,7 +1065,7 @@
             ]
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_DEL",
             "fields": []
           },
           {
@@ -1667,11 +1667,11 @@
             "fields": []
           },
           {
-            "id": "KC_LBRC",
+            "id": "KC_MINS",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_UNDS",
             "fields": []
           },
           {
@@ -1753,11 +1753,11 @@
             "fields": []
           },
           {
-            "id": "KC_VOLD",
+            "id": "KC_EQL",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_PLUS",
             "fields": []
           },
           {
@@ -1839,11 +1839,11 @@
             "fields": []
           },
           {
-            "id": "KC_MPLY",
+            "id": "KC_LBRC",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_LCBR",
             "fields": []
           },
           {
@@ -1925,11 +1925,11 @@
             "fields": []
           },
           {
-            "id": "KC_VOLU",
+            "id": "KC_RBRC",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_RCBR",
             "fields": []
           },
           {
@@ -2011,11 +2011,11 @@
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_BSLS",
             "fields": []
           },
           {
-            "id": "KC_TRNS",
+            "id": "KC_PIPE",
             "fields": []
           },
           {
@@ -2699,7 +2699,7 @@
             "fields": []
           },
           {
-            "id": "KC_RBRC",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -2785,7 +2785,7 @@
             "fields": []
           },
           {
-            "id": "KC_MPRV",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -2871,7 +2871,7 @@
             "fields": []
           },
           {
-            "id": "KC_MSTP",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -2957,7 +2957,7 @@
             "fields": []
           },
           {
-            "id": "KC_MNXT",
+            "id": "KC_TRNS",
             "fields": []
           },
           {
@@ -3127,7 +3127,7 @@
           {
             "id": "MO()",
             "fields": [
-              2
+              3
             ]
           },
           {
@@ -3473,14 +3473,12 @@
           {
             "id": "MO()",
             "fields": [
-              0
+              2
             ]
           },
           {
-            "id": "TO()",
-            "fields": [
-              0
-            ]
+            "id": "KC_TRNS",
+            "fields": []
           },
           {
             "id": "KC_TRNS",
@@ -3739,10 +3737,8 @@
             ]
           },
           {
-            "id": "TO()",
-            "fields": [
-              1
-            ]
+            "id": "KC_TRNS",
+            "fields": []
           },
           {
             "id": "KC_TRNS",
